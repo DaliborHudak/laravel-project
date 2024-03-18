@@ -8,6 +8,12 @@ use Illuminate\Http\Request;
 class IdeaController extends Controller
 {
     public function store(){
+
+        request()->validate([
+            // min 3 characters, max 240 (idea validation)
+            'idea' => 'required|min:3|max:240'
+        ]);
+
         $idea = Idea::create(
             [
             'content' => request()->get('idea', ''),
