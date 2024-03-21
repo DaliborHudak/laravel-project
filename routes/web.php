@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\IdeaController;
+use App\Http\Controllers\CommentController;
 use App\Http\Controllers\DashboardController;
 
 /*
@@ -27,6 +28,8 @@ Route::get('/ideas/{idea}/edit', [IdeaController::class, 'edit'] )->name('ideas.
 Route::put('/ideas/{idea}', [IdeaController::class, 'update'] )->name('ideas.update');
 
 Route::delete('/ideas/{idea}', [IdeaController::class, 'destroy'] )->name('ideas.destroy');
+
+Route::post('/ideas/{idea}/comments', [CommentController::class, 'store'] )->name('ideas.comments.store');
 
 
 Route::get('/terms', function(){
