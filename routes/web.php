@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\IdeaController;
 use App\Http\Controllers\DashboardController;
 
@@ -28,6 +29,9 @@ Route::put('/ideas/{idea}', [IdeaController::class, 'update'] )->name('ideas.upd
 
 Route::delete('/ideas/{idea}', [IdeaController::class, 'destroy'] )->name('ideas.destroy');
 
+Route::get('/register', [AuthController::class, 'register'] )->name('register');
+
+Route::post('/register', [AuthController::class, 'store'] );
 
 Route::get('/terms', function(){
     return view('terms');
