@@ -10,7 +10,6 @@ class IdeaController extends Controller
     
 
     public function show(Idea $idea){
-
         return view('ideas.show', compact('idea'));
     }
 
@@ -44,7 +43,7 @@ class IdeaController extends Controller
     public function update(Idea $idea){
         
         $validated = request()->validate([
-            // min 3 characters, max 240 (idea validation)
+            // min 3 characters, max 240, (idea validation)
             'content' => 'required|min:3|max:240'
         ]);
 
