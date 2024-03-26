@@ -16,3 +16,12 @@ In this Laravel Social Network project I've already learned:
 
 This project is not finished yet. I'm planning to add more functionalities & commits soon.
 
+![f1](https://github.com/DaliborHudak/laravel-project/assets/94002411/e899e899-33f2-41eb-934b-8f1dd2a64d14)
+<br>
+![f2](https://github.com/DaliborHudak/laravel-project/assets/94002411/9fa1aecb-4f30-4f5a-82be-40e3cb9d41d8)
+<br>
+![f3](https://github.com/DaliborHudak/laravel-project/assets/94002411/fae5e34b-54ca-4dbb-b355-db2512b2876c)
+<br>
+![f4](https://github.com/DaliborHudak/laravel-project/assets/94002411/ebf1fabe-95e7-4b2b-bb7d-e3183206de0b)
+<br>
+
