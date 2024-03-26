@@ -7,7 +7,7 @@
     </div>
 
     <hr>
-    <div class="d-flex align-items-start">
+    {{-- <div class="d-flex align-items-start">
         <img style="width:35px" class="me-2 avatar-sm rounded-circle"
             src="https://api.dicebear.com/6.x/fun-emoji/svg?seed=Luigi" alt="Luigi Avatar">
         <div class="w-100">
@@ -26,5 +26,5 @@
                 popular during the Renaissan
             </p>
         </div>
-    </div>
+    </div> --}}
 </div>
