@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Idea;
 use Illuminate\Http\Request;
 
-class IdeaController extends Controller
+class  IdeaController extends Controller
 {
     
 
