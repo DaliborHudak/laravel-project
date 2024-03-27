@@ -15,6 +15,6 @@
         </form>
     </div>
 @endauth
-@guest
+@guest()
     <h4>Login to share your ideas </h4>
 @endguest
