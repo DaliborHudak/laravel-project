@@ -6,8 +6,11 @@
                     src="https://api.dicebear.com/6.x/fun-emoji/svg?seed=Mario" alt="Mario Avatar">
                 <div>
                     @if ($editing ?? false)
-                        <input value="{{ $user->name }}" type="text" class="form-control">
-                    @else
+                        <input name="name" value="{{ $user->name }}" type="text" class="form-control">
+                        @error('name')
+                            <span class="text-danger fs-6">{{ $message }}</span>
+                        @enderror
+                        @else
                         <h3 class="card-title mb-0"><a href="#"> {{ $user->name }}
                             </a></h3>
                         <span class="fs-6 text-muted">{{ $user->email }}</span>
@@ -22,6 +25,12 @@
                 @endauth
             </div>
         </div>
+        @if ($editing ?? false)
+        <div class="mt-4">
+            <label for="">Profile Picture</label>
+            <input name="image" class="form-control" type="file">
+        </div>
+        @endif
         <div class="px-2 mt-4">
             <h5 class="fs-5"> Bio : </h5>
             @if ($editing ?? false)
